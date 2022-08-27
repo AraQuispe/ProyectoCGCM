@@ -7,7 +7,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
-    #aplicaciones que agrego
+    # aplicaciones que agrego
     'Camara',
     ########################
     'django.contrib.admin',
@@ -54,7 +54,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
