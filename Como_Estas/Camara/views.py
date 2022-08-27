@@ -9,9 +9,9 @@ from django.views.decorators import gzip
 from Camara.Code import VideoCamara as vc
 #########################################
 
-# Create your views here.
-def camara(request):
-    return HttpResponse("Hola Mundo")
+def inicio(request):
+    return render(request,'inicio.html')
+
 
 @gzip.gzip_page
 def testCamara(request):
@@ -24,14 +24,3 @@ def testCamara(request):
         pass
     return render(request,'Camara/index.html')
     ###########################################
-
-# Uso de variables
-def saludo(request,nombre):
-    context={'name':nombre}
-    return render(request,'Camara/saludo.html',context)
-
-# Uso de condicionales
-def moneda(request):
-    num=1
-    context={'num':num}
-    return render(request,'Camara/moneda.html',context)
