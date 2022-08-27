@@ -1,12 +1,10 @@
-from django.http import HttpRequest, HttpResponse, StreamingHttpResponse
-from django.shortcuts import render
-from django.http import HttpResponse
-
-#########################################
-from django.views.decorators import gzip
 # import cv2
 # import threading
 from Camara.Code import VideoCamara as vc
+from django.http import StreamingHttpResponse
+from django.shortcuts import render
+#########################################
+from django.views.decorators import gzip
 
 
 #########################################
