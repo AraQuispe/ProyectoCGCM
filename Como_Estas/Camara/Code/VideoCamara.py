@@ -25,6 +25,7 @@ class VideoCamara(object):
 
 def gen(camera):
     while True:
+        print("GA")
         # 1.Conversion a Escala de Grises
         gray = cv2.cvtColor(camera.frame, cv2.COLOR_BGR2GRAY)
         # cv2.imshow("Escala de Grises sin filtro",gray)
